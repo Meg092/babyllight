@@ -1,8 +1,11 @@
+import 'package:colorful_doll/pages/doll_computed/doll_computed_binding.dart';
+import 'package:colorful_doll/pages/doll_computed/doll_computed_view.dart';
 import 'package:colorful_doll/pages/doll_main/doll_main_binding.dart';
 import 'package:colorful_doll/pages/doll_main/doll_main_view.dart';
 import 'package:colorful_doll/pages/doll_not/doll_not_binding.dart';
 import 'package:colorful_doll/pages/doll_not/doll_not_view.dart';
 import 'package:colorful_doll/pages/doll_setting/doll_setting_binding.dart';
+import 'package:colorful_doll/pages/doll_setting/doll_setting_build.dart';
 import 'package:colorful_doll/pages/doll_setting/doll_setting_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -45,7 +48,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: Colorful,
-      initialRoute: '/dollMain',
+      initialRoute: '/',
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: primaryColor,
@@ -78,26 +81,14 @@ class MyApp extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
         ),
-        cardTheme: const CardTheme(
-          color: Colors.white,
-          elevation: 0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-          ),
-        ),
-        dialogTheme: const DialogTheme(
-          actionsPadding: EdgeInsets.only(right: 10, bottom: 5),
-        ),
-        dividerTheme: DividerThemeData(
-          thickness: 1,
-          color: Colors.grey[200],
-        ),
       ),
     );
   }
 }
 List<GetPage<dynamic>> Colorful = [
+  GetPage(name: '/', page: () => const DollComputedView(), binding: DollComputedBinding()),
   GetPage(name: '/dollMain', page: () => const DollMainPage(), binding: DollMainBinding()),
   GetPage(name: '/dollNot', page: () => const DollNotView(), binding: DollNotBinding()),
+  GetPage(name: '/dollSettingTool', page: () => const DollSettingBuild()),
   GetPage(name: '/dollSetting', page: () => DollSettingPage(), binding: DollSettingBinding()),
 ];

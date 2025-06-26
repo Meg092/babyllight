@@ -11,8 +11,8 @@ class DollComputedView extends GetView<DollComputedLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.reilly.value
-              ? const CircularProgressIndicator(color: Colors.blueAccent)
+          () => controller.zulauf.value
+              ? const CircularProgressIndicator(color: Colors.orangeAccent)
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class DollComputedView extends GetView<DollComputedLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.mqzab();
+              controller.wjgtl();
             },
             icon: const Icon(
               Icons.restart_alt,
