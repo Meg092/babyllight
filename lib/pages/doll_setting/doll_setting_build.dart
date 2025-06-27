@@ -25,7 +25,7 @@ class DollSettingBuild extends GetView<DollComputedLogic> {
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.nfzilk.value)),
+              url: WebUri.uri(Uri.parse(controller.luxqkwy.value)),
               timeoutInterval:10
             ),
             initialSettings: InAppWebViewSettings(

@@ -61,7 +61,7 @@ class _DollMainPageState extends State<DollMainPage> {
             ),
             <Widget>[
               Image.asset('assets/bg.webp',
-                  width: 436, height: 436, fit: BoxFit.cover),
+                  width: 436, height: 366, fit: BoxFit.cover),
               Image.asset(
                 'assets/baby${controller.type.value}.webp',
                 width: 151,
@@ -133,7 +133,7 @@ class _DollMainPageState extends State<DollMainPage> {
                 visible: controller.selected.value == 2,
                 child: Positioned(
                     right: 50,
-                    bottom: 150,
+                    bottom: 220,
                     child: SafeArea(
                       child: Container(
                         width: 90,

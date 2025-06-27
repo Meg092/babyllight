@@ -1,0 +1,2 @@
+/Users/brian/Music/Music/Media.localized/chat/new/colorful_doll/android/app/.cxx/RelWithDebInfo/3w3v5w4t/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/brian/Music/Music/Media.localized/chat/new/colorful_doll/android/app/.cxx/RelWithDebInfo/3w3v5w4t/armeabi-v7a/CMakeFiles/rebuild_cache.dir
